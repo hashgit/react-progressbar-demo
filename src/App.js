@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <div className='center'>
         {barsHtml}
-        <select onChange={(event) => this.changeSelect(event.target.value)} value={this.state.selectedBar}>
+        <select className='select' onChange={(event) => this.changeSelect(event.target.value)} value={this.state.selectedBar}>
           <option>Select a bar</option>
           {bars && bars.map((bar, index) => <option value={index} key={index}>{index}: {bar}%</option>)}
         </select>
