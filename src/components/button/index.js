@@ -10,9 +10,9 @@ class Button extends Component {
   render() {
     const { change } = this.state;
     return (
-      <Button className='button'>
+      <button className='button' value={change} onClick={this.props.onClick}>
         {change}
-      </Button>
+      </button>
     );
   }
 }
