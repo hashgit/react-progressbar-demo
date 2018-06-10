@@ -4,7 +4,7 @@ import Button from './components/button';
 import './App.css';
 
 class App extends Component {
-  apiUrl = 'http://localhost:8080/api/bars';
+  apiUrl = 'https://fierce-hamlet-51055.herokuapp.com/api/bars';
   state = { selectedBar: -1, bars: [], buttons: [] };
 
   componentDidMount() {
